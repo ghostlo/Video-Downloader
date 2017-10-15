@@ -117,7 +117,7 @@ class Config :
 		osType = platform.system()
 
 		if osType == 'Linux' :
-			self.configPath = '/usr/local/bin/' + self.appTitle + '/'
+			self.configPath = '/home/' + self.USER + '/.config/' + self.appTitle + '/'
 		elif osType == 'Darwin' :
 			self.configPath = '/Users/' + self.USER + '/Library/Application Support/' + self.appTitle + '/'
 		elif osType == 'Windows' :
